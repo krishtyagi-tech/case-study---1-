@@ -1,0 +1,14 @@
+import random
+
+def scramble_word(word):
+    
+    letters = list(word)
+    
+    random.shuffle(letters)
+
+    return ''.join(letters)
+
+word = "scramble"
+scrambled = scramble_word(word)
+print("Original:", word)
+print("Scrambled:", scrambled)
